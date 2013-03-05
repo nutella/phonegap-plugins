@@ -3,7 +3,7 @@ AdMob Cordova Plugin for iOS
 
 This is the AdMob Cordova Plugin for iOS.  It provides a way to request
 AdMob ads natively from JavaScript.  This plugin was written and tested with
-the Google AdMob SDK version 6.1.4 for iOS, and Cordova 2.0.0.
+the Google AdMob SDK version 6.3.0 for iOS, and Cordova 2.4.0.
 
 ##Requirements:
 
@@ -17,15 +17,16 @@ the Google AdMob SDK version 6.1.4 for iOS, and Cordova 2.0.0.
 
 1. Import Cordova SDK binary and Google AdMob SDK binary into your project (with
    their associated header files).
-2. Place Cordova JS and AdMobPlugin.js inside www/ folder. This should be where
+2. Place Cordova JS, AdMobPlugin.js and demo main.js inside www/ folder. This should be where
    your index.html lives.
-3. Place AdMobPlugin.h and AdMobPlugin.m into the plugins/ folder.
+3. Place AdMobPlugin.h and AdMobPlugin.m into the Plugins/ folder.
 4. Add AdMobPlugin to Cordova.plist. The row should have values (AdMobPlugin,
    String, AdMobPlugin) corresponding to (Key, Type, Value).
-5. Add an entry under ExternalHosts in Cordova.plist. Make the entry (String, *)
+5. Add an array entry under ExternalHosts in app-Info.plist. Add an item (String, *)
    corresponding to (Type, Value).
 6. Complete the Google AdMob SDK setup for iOS at
-   https://developers.google.com/mobile-ads-sdk/docs.
+   https://developers.google.com/mobile-ads-sdk/docs (check, or use, MainViewController.*
+   modified files)
 
 ##Implementation:
 
